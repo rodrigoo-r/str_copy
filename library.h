@@ -20,6 +20,6 @@
  *               The caller must ensure the buffer has enough space to hold the copied string,
  *               including the null terminator.
  */
-void str_copy(const char* pivot, const char* target);
+void str_copy(const char* pivot, char* target);
 
 #endif //STR_COPY_LIBRARY_H
