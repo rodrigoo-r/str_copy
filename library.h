@@ -11,6 +11,11 @@
 #ifndef STR_COPY_LIBRARY_H
 #define STR_COPY_LIBRARY_H
 
+#if defined(__cplusplus)
+extern "C"
+{
+#endif
+
 /**
  * Copies a null-terminated string from the source (`pivot`) to the destination (`target`).
  *
@@ -21,5 +26,9 @@
  *               including the null terminator.
  */
 void str_copy(const char* pivot, char* target);
+
+#if defined(__cplusplus)
+}
+#endif
 
 #endif //STR_COPY_LIBRARY_H
