@@ -16,6 +16,17 @@ extern "C"
 {
 #endif
 
+// Define true/false values
+#ifndef TRUE
+#define TRUE 1
+#endif
+
+#ifndef FALSE
+#define FALSE 0
+#endif
+
+typedef unsigned long int size_t;
+
 /**
  * Copies a null-terminated string from the source (`pivot`) to the destination (`target`).
  *
@@ -25,7 +36,27 @@ extern "C"
  *               The caller must ensure the buffer has enough space to hold the copied string,
  *               including the null terminator.
  */
-void str_copy(const char* pivot, char* target);
+inline void str_copy(const char* pivot, char* target)
+{
+    // Define an index
+    size_t i = 0;
+
+    // Iterate over the pivot
+    while (*pivot != '\0')
+    {
+        // Copy the character
+        target[i] = *pivot;
+
+        // Move to the next character
+        pivot++;
+
+        // Increment the index
+        i++;
+    }
+
+    // Add a null terminator
+    target[i] = '\0';
+}
 
 #if defined(__cplusplus)
 }
