@@ -8,8 +8,8 @@
  * under certain conditions; type `show c' for details.
 */
 
-#ifndef STR_COPY_LIBRARY_H
-#define STR_COPY_LIBRARY_H
+#ifndef FLUENT_LIBC_STR_COPY_LIBRARY_H
+#define FLUENT_LIBC_STR_COPY_LIBRARY_H
 
 #if defined(__cplusplus)
 extern "C"
@@ -62,4 +62,4 @@ inline void str_copy(const char* pivot, char* target)
 }
 #endif
 
-#endif //STR_COPY_LIBRARY_H
+#endif //FLUENT_LIBC_STR_COPY_LIBRARY_H
