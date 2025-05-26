@@ -8,4 +8,4 @@
  * under certain conditions; type `show c' for details.
 */
 
-#include "str_copy.h"
+#include "include/fluent/str_copy/str_copy.h"
