@@ -16,16 +16,12 @@ extern "C"
 {
 #endif
 
-// Define true/false values
-#ifndef TRUE
-#define TRUE 1
+#ifndef FLUENT_LIBC_RELEASE
+#   include <types.h>
+#else
+#   include <fluent/std_bool/std_bool.h>
+#   include <fluent/types/types.h>
 #endif
-
-#ifndef FALSE
-#define FALSE 0
-#endif
-
-typedef unsigned long int size_t;
 
 /**
  * Copies a null-terminated string from the source (`pivot`) to the destination (`target`).
