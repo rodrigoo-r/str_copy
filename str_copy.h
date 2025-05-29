@@ -32,7 +32,7 @@ extern "C"
  *               The caller must ensure the buffer has enough space to hold the copied string,
  *               including the null terminator.
  */
-inline void str_copy(const char* pivot, char* target)
+static inline void str_copy(const char* pivot, char* target)
 {
     // Define an index
     size_t i = 0;
